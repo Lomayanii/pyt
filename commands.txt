@@ -1,0 +1,161 @@
+Syntax
+x = 5
+x += 1
+type(x)
+print(x)
+len(obj)
+id(obj)
+del x
+
+Math
+abs(x)
+round(x, n)
+pow(a,b)
+divmod(a,b)
+min(a,b)
+max(a,b)
+sum(iterable)
+
+Strings
+s = "test"
+s.lower()
+s.upper()
+s.strip()
+s.replace("a","b")
+s.split(",")
+",".join(list)
+f"{x=}"
+
+Lists
+lst = [1,2,3]
+lst.append(x)
+lst.extend(other)
+lst.insert(i,x)
+lst.remove(x)
+lst.pop()
+lst.clear()
+lst.index(x)
+lst.count(x)
+lst.sort()
+sorted(lst)
+lst.reverse()
+
+List Comprehensions
+[x*x for x in range(10)]
+[x for x in data if x>0]
+[(x,y) for x in A for y in B]
+
+Tupel & Packing
+t = (1,2,3)
+x,y,z = t
+return a,b
+
+Dictionaries
+d = {"a":1}
+d["a"]
+d.get("a")
+d.keys()
+d.values()
+d.items()
+d.update(other)
+d.pop("a")
+
+Sets
+d = {"a":1}
+d["a"]
+d.get("a")
+d.keys()
+d.values()
+d.items()
+d.update(other)
+d.pop("a")
+
+Bedingungen
+if cond:
+elif cond:
+else:
+
+x if cond else y
+
+Schleifen
+for x in iterable:
+for i in range(n):
+while cond:
+
+break
+continue
+pass
+
+Iterator-Tools
+range(n)
+enumerate(lst)
+zip(a,b)
+reversed(lst)
+map(f, data)
+filter(f, data)
+
+Funktionen
+def f(x):
+    return x
+
+def f(x=0):
+def f(*args):
+def f(**kwargs):
+
+Lambda & Short Functions
+lambda x: x*x
+
+Imports & Module
+import math
+import random
+import sys
+import os
+from math import sin,cos
+
+
+Dateien lesen/schreiben
+open("file.txt")
+with open("file.txt") as f:
+    data = f.read()
+
+f.readline()
+f.readlines()
+
+with open("out.txt","w") as f:
+    f.write("text")
+
+Exceptions
+try:
+except:
+except ValueError:
+else:
+finally:
+raise Exception("msg")
+
+Klassen
+class A:
+    def __init__(self,x):
+        self.x=x
+
+    def f(self):
+        return self.x
+
+
+Standard-Zeug
+
+math.sqrt()
+math.sin()
+random.random()
+random.choice(lst)
+time.time()
+
+Debugging & Introspection
+help(obj)
+dir(obj)
+isinstance(x,int)
+
+Python-Idiome
+a,b = b,a
+x = lst[-1]
+lst[:5]
+lst[::2]
