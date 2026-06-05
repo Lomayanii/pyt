@@ -1,0 +1,23 @@
+Eingabe: A ε Rnxn
+for j = 1 : n -1 do 
+ a_j+1_j = a_j+1_j / a_j_j
+ a_j+1_j+1 = a_j+1_j+1 - a_j+1_j * a_j_j+1
+end for
+Ausgabe: A = L*R
+
+z_1 = b_1 
+for j =  1 : n-1 do
+z_j+1 = b_j+1 - z_j * a_j+1_j
+end for
+
+100 z0
+210 z1
+031 z2
+
+323 x0
+021 x1
+004 x2
+x_n = z_n/a_n_n
+
+for j = n-1 : 1 do
+x_j = (z_j - x_j+1 * a_j_j+1)/a_j,j
